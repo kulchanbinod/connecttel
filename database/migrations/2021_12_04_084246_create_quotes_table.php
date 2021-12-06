@@ -35,7 +35,7 @@ class CreateQuotesTable extends Migration
             $table->double('eps')->nullable();
             $table->double('pe')->nullable();
             $table->string('earningsAnnouncement')->nullable();
-            $table->integer('sharesOutstanding')->nullable();
+            $table->bigIncrements('sharesOutstanding')->nullable();
             $table->integer('timestamp')->nullable();
             $table->timestamps();
         });
